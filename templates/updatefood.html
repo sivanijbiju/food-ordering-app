@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Update Food</title>
+
+    <style>
+
+        body{
+            font-family: Arial;
+            background:#f2f2f2;
+        }
+
+        .container{
+            width:350px;
+            margin:80px auto;
+            background:white;
+            padding:30px;
+            border-radius:10px;
+            box-shadow:0 0 10px gray;
+        }
+
+        input{
+            width:100%;
+            padding:10px;
+            margin-top:10px;
+        }
+
+        button{
+            width:100%;
+            padding:10px;
+            margin-top:20px;
+            background:#ff5722;
+            color:white;
+            border:none;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <h2>Update Food</h2>
+
+    <form method="POST">
+
+        <input type="text"
+               name="food_name"
+               value="{{ food.food_name }}"
+               required>
+
+        <input type="text"
+               name="price"
+               value="{{ food.price }}"
+               required>
+
+        <button type="submit">
+            Update Food
+        </button>
+
+    </form>
+
+</div>
+
+</body>
+</html>

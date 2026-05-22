@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <title>Checkout</title>
+
+    <style>
+
+        body{
+            font-family: Arial;
+            background:#f2f2f2;
+            margin:0;
+        }
+
+        .navbar{
+            background:#333;
+            padding:15px;
+            text-align:center;
+        }
+
+        .navbar a{
+            color:white;
+            margin:20px;
+            text-decoration:none;
+            font-weight:bold;
+        }
+
+        h1{
+            text-align:center;
+            margin-top:30px;
+        }
+
+        .container{
+            width:80%;
+            margin:30px auto;
+            background:white;
+            padding:30px;
+            border-radius:10px;
+            box-shadow:0 0 10px gray;
+        }
+
+        .item{
+            display:flex;
+            justify-content:space-between;
+            padding:15px;
+            border-bottom:1px solid gray;
+        }
+
+        .total{
+            text-align:right;
+            font-size:25px;
+            margin-top:20px;
+            color:#ff5722;
+            font-weight:bold;
+        }
+
+        .btn{
+            display:block;
+            width:250px;
+            margin:30px auto;
+            padding:15px;
+            background:#ff5722;
+            color:white;
+            text-align:center;
+            text-decoration:none;
+            border-radius:5px;
+            font-size:18px;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+{% with messages = get_flashed_messages() %}
+    {% if messages %}
+
+        {% for message in messages %}
+
+            <div style="
+                background:lightgreen;
+                padding:15px;
+                text-align:center;
+                margin:10px;
+                font-weight:bold;
+            ">
+                {{ message }}
+            </div>
+
+        {% endfor %}
+
+    {% endif %}
+{% endwith %}
+
+    <div class="navbar">
+
+        <a href="/">Home</a>
+
+        <a href="/viewfood">Foods</a>
+
+        <a href="/cart">Cart</a>
+
+        <a href="/logout">Logout</a>
+
+    </div>
+
+    <h1>Checkout</h1>
+
+    <div class="container">
+
+        {% for item in cart_items %}
+
+        <div class="item">
+
+            <h3>{{ item.food_name }}</h3>
+
+            <h3>{{ item.price }}</h3>
+
+        </div>
+
+        {% endfor %}
+
+        <div class="total">
+
+            Total: ₹{{ total }}
+
+        </div>
+
+        <a href="/payment" class="btn">
+
+           Proceed To Payment
+
+        </a>
+
+    </div>
+
+</body>
+
+          
+</html>
