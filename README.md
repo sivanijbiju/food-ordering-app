@@ -33,7 +33,7 @@ A complete Food Ordering Web Application developed using Flask and SQLite.
 ## Installation
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/food-ordering-app.git
+git clone https://github.com/sivanijbiju/food-ordering-app.git
 
 cd food-ordering-app
 
@@ -48,41 +48,41 @@ python3 app.py
 ## Project Screenshots
 
 ### Login Page
-![Login](login.png)
+![Login](screenshots/login.png)
 
 ### Register Page
-![Register](register.png)
+![Register](screenshots/register.png)
 
 ### Admin Dashboard
-![Admin Dashboard](admin_dashboard.png)
+![Admin Dashboard](screenshots/admin_dashboard.png)
 
 ### User Dashboard
-![User Dashboard](user_dashboard.png)
+![User Dashboard](screenshots/user_dashboard.png)
 
 ### Add Food Page
-![Add Food](add_food_page.png)
+![Add Food](screenshots/add_food_page.png)
 
 ### Admin Menu
-![Admin Menu](admin_menu1.png)
+![Admin Menu](screenshots/admin_menu1.png)
 
-![Admin Menu 2](admin_menu2.png)
+![Admin Menu 2](screenshots/admin_menu2.png)
 
 ### User Menu
-![User Menu](user_menu1.png)
+![User Menu](screenshots/user_menu1.png)
 
-![User Menu 2](user_menu2.png)
+![User Menu 2](screenshots/user_menu2.png)
 
 ### Order History
-![Order History](order_history.png)
+![Order History](screenshots/order_history.png)
 
 ### Order Management
-![Order Management](order_management.png)
+![Order Management](screenshots/order_management.png)
 
 ### User Profile
-![User Profile](user_profile.png)
+![User Profile](screenshots/user_profile.png)
 
 ### Admin Profile
-![Admin Profile](admin_profile.png)
+![Admin Profile](screenshots/admin_profile.png)
 
 ### Dark Mode
-![Dark Mode](dark_mode.png)
+![Dark Mode](screenshots/dark_mode.png)
