@@ -5,6 +5,7 @@ import os
 
 app = Flask(__name__)
 
+
 app.secret_key = 'secret123'
 
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///food.db'

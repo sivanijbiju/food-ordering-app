@@ -45,3 +45,44 @@ pip install flask flask_sqlalchemy werkzeug pillow
 
 python3 app.py
 
+## Project Screenshots
+
+### Login Page
+![Login](login.png)
+
+### Register Page
+![Register](register.png)
+
+### Admin Dashboard
+![Admin Dashboard](admin_dashboard.png)
+
+### User Dashboard
+![User Dashboard](user_dashboard.png)
+
+### Add Food Page
+![Add Food](add_food_page.png)
+
+### Admin Menu
+![Admin Menu](admin_menu1.png)
+
+![Admin Menu 2](admin_menu2.png)
+
+### User Menu
+![User Menu](user_menu1.png)
+
+![User Menu 2](user_menu2.png)
+
+### Order History
+![Order History](order_history.png)
+
+### Order Management
+![Order Management](order_management.png)
+
+### User Profile
+![User Profile](user_profile.png)
+
+### Admin Profile
+![Admin Profile](admin_profile.png)
+
+### Dark Mode
+![Dark Mode](dark_mode.png)
