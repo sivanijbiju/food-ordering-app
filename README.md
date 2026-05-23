@@ -41,4 +41,4 @@ python3 app.py
 The application was deployed using AWS EC2 Linux server with Flask framework and GitHub version control.
 
 ## Author
-Sivani Biju
+Sivani J Biju
