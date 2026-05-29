@@ -1,0 +1,23 @@
+name: Flask CI
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v3
+
+    - uses: actions/setup-python@v4
+      with:
+        python-version: '3.10'
+
+    - run: |
+        pip install flask flask_sqlalchemy werkzeug pillow flask-limiter
+
+    - run: |
+        echo "CI Pipeline Running Successfully"
