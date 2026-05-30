@@ -1,11 +1,9 @@
-FROM python:3.10
+kFROM python:3.11
 
 WORKDIR /app
 
 COPY . .
 
-RUN pip install flask flask_sqlalchemy werkzeug pillow flask-limiter
+RUN pip install -r requirements.txt
 
-EXPOSE 9000
-
-CMD ["python3", "app.py"]
+CMD ["python3","app.py"]
